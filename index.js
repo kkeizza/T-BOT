@@ -2,5 +2,4 @@
 
 
 
-//ask for source code in this site at affordable price
-// https://keith-site.vercel.app/contact
+
