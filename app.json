@@ -1,0 +1,75 @@
+{
+  "name": "T-BOT",
+  "description": "Powerful Telegram bot with welcome messages, anti-link protection, and remote command system",
+  "keywords": [
+    "telegram",
+    "bot",
+    "automation",
+    "moderation",
+    "telegram-bot",
+    "nodejs",
+    "javascript",
+    "keith"
+  ],
+  "website": "https://github.com/Keithkeizzah/T-BOT#readme",
+  "repository": "https://github.com/Keithkeizzah/T-BOT.git",
+  "logo": "https://files.catbox.moe/c2v26s.jpg",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram bot token from @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram user ID (get it from @userinfobot)",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix for bot",
+      "value": ".",
+      "required": false
+    },
+    "GREET_ENABLED": {
+      "description": "Enable welcome messages (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "GIF_URL": {
+      "description": "URL for welcome GIF",
+      "value": "https://files.catbox.moe/pm9x7c.gif",
+      "required": false
+    },
+    "ANTILINK": {
+      "description": "Enable anti-link protection (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "OWNER_NAME": {
+      "description": "Name to display as bot owner",
+      "value": "Keith",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Display name for your bot",
+      "value": "T-BOT",
+      "required": false
+    },
+    "TIMEZONE": {
+      "description": "Timezone for timestamps",
+      "value": "Africa/Nairobi",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ]
+}

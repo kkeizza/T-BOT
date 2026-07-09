@@ -1,0 +1,37 @@
+
+{
+  "name": "telegram-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+    "s": "node index.js", 
+    "start": "node index.js", 
+    "keith": "pm2 start index.js --attach --max-memory-restart 490M",
+    "c": "tsc"
+  },
+  "keywords": [],
+  "author": "keithkeizzah",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "axios": "^1.6.8",
+    "adm-zip": "latest",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "gradient-string": "^2.0.2",
+    "hercai": "^12.2.0",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2",
+    "node-catbox": "3.2.0",
+    "node-id3": "^0.2.6",
+    "moment": "^2.30.1",
+    "node-telegram-bot-api": "^0.65.1",
+    "path": "^0.12.7",
+    "simple-git": "^3.24.0",
+    "telegram-inline-calendar": "^1.7.0",
+    "cheerio": "latest"
+    
+  }
+}
